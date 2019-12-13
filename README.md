@@ -18,12 +18,12 @@ chmod +x install.sh
 **Via wget**
 
 ```
-sh -c "$(wget -O- https://github.com/alexfgrdo/koala/tools/install.sh)"
+sh -c "$(wget -O- https://github.com/alexfgrdo/koala/bin/install.sh)"
 ```
 **Via curl**
 
 ```
-sh -c "$(curl -fsSL https://github.com/alexfgrdo/koala/tools/install.sh)"
+sh -c "$(curl -fsSL https://github.com/alexfgrdo/koala/bin/install.sh)"
 ```
 
 ### Utilisation
