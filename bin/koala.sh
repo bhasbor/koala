@@ -24,8 +24,13 @@ elif [ "$1 "== "-k" ]; then
 elif [ "$1" == "-r" ]; then
   docker image rm alexfgrdo/koala
 
+# Upgrade
+elif [ "$1" == "upgrade" ]; then
+  chmod +x $DIR/bin/upgrade.sh
+  sh $DIR/bin/upgrade.sh
+
 # Uninstall
-elif [ "$1" == "-uninstall" ]; then
+elif [ "$1" == "uninstall" ]; then
   chmod +x $DIR/bin/uninstall.sh
   sh $DIR/bin/uninstall.sh
 
