@@ -4,6 +4,13 @@ An amazing bug bounty toolkit for Docker.
 
 ## Instructions
 
+> It is obvious that this tool MUST NOT be used in a malicious context. It should only be used against your own machine or with the consent of the owner of the targeted machine. The author of **Koala** can in no way be held responsible for any malicious and unauthorized use of this script.
+
+### Prerequisites
+
+- A Unix-like operating system: macOS, Linux, BSD. On Windows: WSL is preferred, but cygwin or msys also mostly work.
+- Docker should be installed. If is not installed, check the following instructions here: [Docker Install](https://docs.docker.com/install/)
+
 ### Installation
 
 ```
@@ -11,6 +18,12 @@ git clone https://github.com/alexfgrdo/koala.git
 cd koala/bin/
 chmod +x install.sh
 ./install.sh
+```
+
+### Uninstall
+
+```
+koala -uninstall
 ```
 
 ### Utilisation
@@ -21,7 +34,6 @@ chmod +x install.sh
 `koala -h` : Print help <br/>
 `koala -k` : Kill all Koala containers <br/>
 `koala -r` : Remove Koala image <br/>
-`koala -uninstall` : Uninstall Koala <br />
 `koala -v` : Print version
 
 ## Tools
@@ -69,10 +81,6 @@ chmod +x install.sh
 - [wpscan](https://github.com/wpscanteam/wpscan)
 - [wordlists](https://tools.kali.org/password-attacks/wordlists)
 - [xsstrike](https://github.com/s0md3v/XSStrike)
-
-## Warning !
-
-It is obvious that this tool MUST NOT be used in a malicious context. It should only be used against your own machine or with the consent of the owner of the targeted machine. The author of **Koala** can in no way be held responsible for any malicious and unauthorized use of this script.
 
 ## Versioning
 
