@@ -7,5 +7,6 @@ Arguments :
   -h :            Print help
   -k :            Kill all Koala containers
   -r :            Remove Koala image
+  -uninstall :    Uninstall Koala
   -v :            Print Version
 
