@@ -2,6 +2,8 @@
 
 An amazing bug bounty toolkit for Docker.
 
+<img src="./src/capture.png" />
+
 ## Instructions
 
 > It is obvious that this tool MUST NOT be used in a malicious context. It should only be used against your own machine or with the consent of the owner of the targeted machine. The author of **Koala** can in no way be held responsible for any malicious and unauthorized use of this script.
