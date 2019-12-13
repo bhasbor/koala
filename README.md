@@ -6,10 +6,24 @@ An amazing bug bounty toolkit for Docker.
 
 ### Installation
 
+**From source**
+
 ```
-git clone https://github.com/alexfgrdo/koala
-cd koala
+git clone https://github.com/alexfgrdo/koala.git
+cd koala/tools/
 chmod +x install.sh
+./install.sh
+```
+
+**Via wget**
+
+```
+sh -c "$(wget -O- https://github.com/alexfgrdo/koala/tools/install.sh)"
+```
+**Via curl**
+
+```
+sh -c "$(curl -fsSL https://github.com/alexfgrdo/koala/tools/install.sh)"
 ```
 
 ### Utilisation

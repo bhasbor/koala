@@ -1,7 +1,8 @@
 #!/bin/sh
 
-DIR=$HOME/Koala
-KOALA=$DIR/tools/koala
+DIR=$HOME/.koala
+KOALA=$DIR/bin/koala.sh
+BIN=/usr/local/bin/koala
 
 cat ./src/info.txt
 
@@ -11,4 +12,4 @@ git clone https://github.com/alexfgrdo/koala.git $DIR
 
 chmod +x $KOALA
 
-ln -sf $KOALA $HOME/Test
+ln -sf $KOALA $BIN
