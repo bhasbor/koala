@@ -14,12 +14,12 @@ chmod +x install.sh
 
 ### Utilisation
 
-`koala` : Run Koala Toolkit
-`koala -b` : Build Koala Toolkit
-`koala -e` : Edit Koala Dockerfile
-`koala -h` : Print help
-`koala -k` : Kill all Koala containers
-`koala -r` : Remove Koala image
+`koala` : Run Koala Toolkit <br/>
+`koala -b` : Build Koala Toolkit <br/>
+`koala -e` : Edit Koala Dockerfile <br/>
+`koala -h` : Print help <br/>
+`koala -k` : Kill all Koala containers <br/>
+`koala -r` : Remove Koala image <br/>
 `koala -V` : Print version
 
 ## Tools
