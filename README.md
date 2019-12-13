@@ -21,8 +21,8 @@ chmod +x install.sh
 `koala -h` : Print help <br/>
 `koala -k` : Kill all Koala containers <br/>
 `koala -r` : Remove Koala image <br/>
-`koala -uninstall` : Uninstall Koala
-`koala -V` : Print version
+`koala -uninstall` : Uninstall Koala <br />
+`koala -v` : Print version
 
 ## Tools
 
