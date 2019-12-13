@@ -25,7 +25,7 @@ elif [ $1 == "-r" ]; then
   docker image rm alexfgrdo/koala
 
 # Uninstall
-elif [ $1 == "-uninstall" ]
+elif [ $1 == "-uninstall" ]; then
   chmod +x $DIR/bin/uninstall.sh
   sh $DIR/bin/uninstall.sh
 
