@@ -31,12 +31,13 @@ koala -uninstall
 ### Utilisation
 
 `koala` : Run Koala Toolkit <br/>
-`koala -b` : Build Koala Toolkit <br/>
-`koala -e` : Edit Koala Dockerfile <br/>
+`koala -b` : Build <br/>
+`koala -e` : Edit Dockerfile <br/>
 `koala -h` : Print help <br/>
-`koala -k` : Kill all Koala containers <br/>
-`koala -r` : Remove Koala image <br/>
-`koala -v` : Print version
+`koala -k` : Kill containers <br/>
+`koala -r` : Remove containers<br/>
+`koala -R` : Remove containers and image
+`koala -v` : Print current version
 
 ## Tools
 
@@ -86,7 +87,7 @@ koala -uninstall
 
 ## Versioning
 
-**1.0**
+**1.0.1**
 
 ## Authors
 

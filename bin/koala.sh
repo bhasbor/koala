@@ -2,6 +2,11 @@
 
 DIR=$HOME/.koala
 
+# Run
+if [ "$1" ]; then
+  cat $DIR/src/info.txt
+  docker run --rm -h koala -it alexfgrdo/koala /bin/bash
+
 # Build
 if [ "$1" == "-b" ]; then
   cat $DIR/src/info.txt
@@ -17,20 +22,27 @@ elif [ "$1" == "-h" ]; then
   cat $DIR/src/help.txt
 
 # Kill
-elif [ "$1 "== "-k" ]; then
+elif [ "$1" == "-k" ]; then
   docker container kill alexfgrdo/koala
 
-# Remove
+# Remove container
 elif [ "$1" == "-r" ]; then
+  docker container kill alexfgrdo/koala
+  docker container rm alexfgrdo/koala
+
+# Remove container and image
+elif [ "$1" == "-R" ]; then
+  docker container kill alexfgrdo/koala
+  docker container rm alexfgrdo/koala
   docker image rm alexfgrdo/koala
 
 # Upgrade
-elif [ "$1" == "upgrade" ]; then
+elif [ "$1" == "-u" ]; then
   chmod +x $DIR/bin/upgrade.sh
   sh $DIR/bin/upgrade.sh
 
 # Uninstall
-elif [ "$1" == "uninstall" ]; then
+elif [ "$1" == "-uninstall" ]; then
   chmod +x $DIR/bin/uninstall.sh
   sh $DIR/bin/uninstall.sh
 
@@ -38,8 +50,7 @@ elif [ "$1" == "uninstall" ]; then
 elif [ "$1" == "-v" ]; then
   cat $DIR/src/version.txt
 
-# Run
+# Unkown argument
 else
-  cat $DIR/src/info.txt
-  docker run --rm -h koala -it alexfgrdo/koala /bin/bash
+  echo "Unknown option argument"
 fi

@@ -2,11 +2,12 @@ Usage :           koala                   Run Koala Toolkit
                   koala [argument]        Options
 
 Arguments :
-  -b :            Build Koala Toolkit
-  -e :            Edit Koala Dockerfile
+  -b :            Build
+  -e :            Edit Dockerfile
   -h :            Print help
-  -k :            Kill all Koala containers
-  -r :            Remove Koala image
+  -k :            Kill containers
+  -r :            Remove containers
+  -R :            Remove containers and image
   -uninstall :    Uninstall Koala
-  -v :            Print Version
+  -v :            Print current version
 
