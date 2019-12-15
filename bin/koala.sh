@@ -8,7 +8,7 @@ if [ "$1" ]; then
   docker run --rm -h koala -it alexfgrdo/koala /bin/bash
 
 # Build
-if [ "$1" == "-b" ]; then
+elif [ "$1" == "-b" ]; then
   cat $DIR/src/info.txt
   docker build --rm --no-cache -t alexfgrdo/koala $DIR/
 
