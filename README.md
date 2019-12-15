@@ -22,12 +22,6 @@ chmod +x install.sh
 ./install.sh
 ```
 
-### Uninstall
-
-```
-koala -uninstall
-```
-
 ### Utilisation
 
 `koala` : Run Koala Toolkit <br/>
@@ -36,7 +30,9 @@ koala -uninstall
 `koala -h` : Print help <br/>
 `koala -k` : Kill containers <br/>
 `koala -r` : Remove containers<br/>
-`koala -R` : Remove containers and image
+`koala -R` : Remove containers and image <br />
+`koala -u` : Upgrade Koala <br />
+`koala -uninstall` : Uninstall Koala <br />
 `koala -v` : Print current version
 
 ## Tools

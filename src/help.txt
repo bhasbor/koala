@@ -8,6 +8,7 @@ Arguments :
   -k :            Kill containers
   -r :            Remove containers
   -R :            Remove containers and image
+  -u :            Upgrade Koala
   -uninstall :    Uninstall Koala
   -v :            Print current version
 
