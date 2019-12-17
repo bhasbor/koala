@@ -47,37 +47,34 @@ RUN apt-get update && apt-get install -y \
     wordlists \
     && rm -rf /var/lib/apt/lists/*
 
-
-RUN mkdir ~/.toolkit && \
-    # Altdns
-    cd ~/.toolkit && \
+RUN cd /opt && \
     git clone https://github.com/infosec-au/altdns.git && \
     cd altdns && \
     pip install -r requirements.txt && \
     chmod +x setup.py && \
     python setup.py install && \
-    # MassDNS
-    cd ~/.toolkit && \
+    # ----- #
+    cd /opt && \
     git clone https://github.com/blechschmidt/massdns.git && \
     cd massdns && \
     make && \
-    ln -sf ~/.toolkit/massdns/bin/massdns /usr/local/bin/massdns && \
-    #Sublist3r
-    cd ~/.toolkit && \
+    ln -sf /opt/massdns/bin/massdns /usr/local/bin/massdns && \
+    # ----- #
+    cd /opt && \
     git clone https://github.com/aboul3la/Sublist3r.git && \
     cd Sublist3r && \
     pip install -r requirements.txt && \
-    ln -s ~/.toolkit/Sublist3r/sublist3r.py /usr/local/bin/ && \
-    # teh_s3_bucketeers
-    cd ~/.toolkit && \
+    ln -s /opt/Sublist3r/sublist3r.py /usr/local/bin/ && \
+    # ----- #
+    cd /opt && \
     git clone https://github.com/tomdev/teh_s3_bucketeers.git && \
     cd teh_s3_bucketeers && \
     chmod +x bucketeer.sh && \
-    ln -sf ~/.toolkit/teh_s3_bucketeers/bucketeer.sh /usr/local/bin/bucketeer && \
-    # xsstrike
-    cd ~/.toolkit && \
+    ln -sf /opt/teh_s3_bucketeers/bucketeer.sh /usr/local/bin/bucketeer && \
+    # ----- #
+    cd /opt && \
     git clone https://github.com/s0md3v/XSStrike.git && \
     cd XSStrike && \
     pip3 install -r requirements.txt && \
     chmod +x xsstrike.py && \
-    ln -sf ~/.toolkit/XSStrike/xsstrike.py /usr/local/bin/xsstrike
+    ln -sf /opt/XSStrike/xsstrike.py /usr/local/bin/xsstrike
